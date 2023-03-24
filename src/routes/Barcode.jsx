@@ -19,6 +19,10 @@ function Barcode() {
         navigate("/quantity", {state: {value: code}});
     };
 
+    const goToSettings = () => {
+        navigate('/settings');
+    }
+
     const buttons = [
         {
             keyCode: 48,
@@ -133,7 +137,7 @@ function Barcode() {
                 <button className="grid-item item-zero" onClick={() => addDigit('0')}>0</button>
                 <button className="grid-item item-enter item-unique" onClick={() => changePage(barcode())}>=</button>
                 <button className="grid-item item-controls" onClick={() => clearDigits()}>C</button>
-                <button className="grid-item item-controls">S</button>
+                <button className="grid-item item-controls" onClick={() => goToSettings()}>S</button>
             </div>
         </div>
     );

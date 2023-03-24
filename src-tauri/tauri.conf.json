@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "zpl-tauri-app",
-    "version": "0.0.0"
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -55,14 +55,19 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": true,
+      "endpoints": [
+        "https://releases.myapp.com/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDkxOEE1M0VCMjk5NUZFQ0IKUldUTC9wVXA2MU9La2ZYOXBhek9RZ25kZ2tlV2RZZGNSbjJXTnNMbHBKV2VVSzUwRmZaTDhVbWYK"
     },
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "zpl-tauri-app",
+        "title": "Barcode ZPL Printer",
         "width": 800
       }
     ]
