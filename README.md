@@ -1,6 +1,6 @@
-# Tauri + Solid
+# ZPL Barcode Printer Application
 
-This template should help get you started developing with Tauri and Solid in Vite.
+This program allows users to create and print out a certain quantity for a four-digit barcode using ZPL commands.
 
 ## Recommended IDE Setup
 
