@@ -15,6 +15,7 @@ The main file to download should be the .msi (Microsoft Windows Installer) file,
 - (NEW) Implemented a recently printed barcodes section (quick access) that can be access when window is larger. Currently only five can be accessed at a time, but will include settings to change the amount.
 
 ## Upcoming Additions
+- Merging barcode and quantity pages into one, with the barcode section staying the same, while the quantity section will feature toggle buttons with the amount to print out.
 - Allow the user to change the ZPL command to print in a different format.
 - Allow the user to align the barcode format in different directions.
 - Have a help section for new users to learn how to use program.
