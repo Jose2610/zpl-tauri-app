@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "zpl-tauri-app",
-    "version": "1.0.0"
+    "productName": "ZPL Barcode Printing",
+    "version": "1.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -55,7 +55,7 @@
       "csp": null
     },
     "updater": {
-      "active": true,
+      "active": false,
       "endpoints": [
         "https://releases.myapp.com/{{target}}/{{arch}}/{{current_version}}"
       ],
@@ -67,7 +67,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "Barcode ZPL Printer",
+        "title": "ZPL Barcode Printing",
         "width": 800,
         "minWidth": 475,
         "minHeight": 500

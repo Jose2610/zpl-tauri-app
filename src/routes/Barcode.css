@@ -55,7 +55,7 @@ html, body {
     font-weight: 700;
     font-size: 4rem;
     line-height: 2em;
-    color: white;
+    color: var(--primary-bg-light);
 }
 
 .subtext {
@@ -63,14 +63,15 @@ html, body {
     font-weight: 700;
     font-size: 3rem;
     line-height: 3em;
-    color: white;
+    color: var(--primary-bg-light);
     text-align: center;
+    border-radius: 5px;
 }
 
 .enter-button {
     background-color: var(--primary-bt-dark);
     border: 8px solid transparent;
-    border-radius: 3px;
+    border-radius: 5px;
 
     font-family: 'Arial', sans-serif;
     font-size: 3rem;
@@ -109,6 +110,7 @@ html, body {
 .grid-layout {
     display: grid;
     background-color: var(--barcode-bg-primary);
+    border-radius: 5px;
     padding: 2em;
 
     grid-column: 1;
@@ -163,6 +165,7 @@ html, body {
     display: grid;
     padding: 2em;
     height: 40vh;
+    border-radius: 5px;
 
     background-color: var(--quick-bg-primary);
     grid-template-columns: repeat(2, 1fr);
@@ -172,19 +175,18 @@ html, body {
 
 .recent-item {
     background-color: var(--primary-bt-dark);
-    border-radius: 3px;
+    border-radius: 5px;
     border: 5px solid transparent;
 
     font-size: 1.9rem;
     color: var(--primary-bg-light);
 
     cursor: pointer;
-    transition: border 100ms ease-in;
+    transition: border-image 100ms ease-in;
 }
 
 .recent-item:hover {
     --angle: 0deg;
-    border: 5px solid transparent;
     border-image: conic-gradient(from var(--angle), var(--barcode-secondary), var(--barcode-active), var(--quantity-active), var(--quantity-secondary), var(--barcode-secondary)) 1;
     animation: 3.5s rotate linear infinite;
 }
@@ -216,6 +218,7 @@ html, body {
     height: 40vh;
     background-color: var(--quantity-bg-primary);
     padding: 2em;
+    border-radius: 5px;
 }
 
 .quantity-text {
@@ -261,13 +264,13 @@ label:hover {
 
 input[type="radio"] {
     appearance: none;
-    background-color: white;
+    background-color: var(--primary-bg-light);
     margin: 0;
 }
 
 input[type="radio"]:checked + label {
     background: var(--quantity-secondary);
-    color: white;
+    color: var(--primary-bg-light);
 }
 
 /* Media Queries */
