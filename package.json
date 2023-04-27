@@ -16,11 +16,11 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
-    "@solidjs/router": "^0.8.0",
     "@tauri-apps/api": "^1.2.0",
-    "qz-tray": "^2.2.2",
     "sha": "^3.0.0",
+    "solid-icons": "^1.0.4",
     "solid-js": "^1.4.7",
+    "solid-transition-group": "^0.2.2",
     "ws": "^8.13.0"
   }
 }

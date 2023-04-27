@@ -68,7 +68,9 @@
         "height": 600,
         "resizable": true,
         "title": "Barcode ZPL Printer",
-        "width": 800
+        "width": 800,
+        "minWidth": 475,
+        "minHeight": 500
       }
     ]
   }

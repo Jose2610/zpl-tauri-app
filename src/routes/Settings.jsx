@@ -1,8 +1,9 @@
 import './Settings.css';
-import { useNavigate } from '@solidjs/router';
+import { useNavigate, useLocation } from '@solidjs/router';
 
 function Settings() {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const goBack = () => {
         navigate('/');
@@ -15,6 +16,10 @@ function Settings() {
             </div>
 
             <div className='settings-options'>
+                <div className='side-by-side'>
+                    <p className='subtext'>Change ZPL command</p>
+                    
+                </div>
                 <button className='settings-option' onClick={() => goBack()}>Go Back</button>
             </div>
         </div>
